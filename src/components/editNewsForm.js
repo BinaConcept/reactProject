@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 
 import { selectNewsById } from '../features/newsSlice'
 
-import { ToastContainer,toast } from 'react-toastify';
+import { ToastContainer,toast, collapseToast } from 'react-toastify';
 import { newsUpdated } from '../features/newsSlice'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -38,18 +38,21 @@ export const EditNewsForm = ({ match }) => {
   ));
 
 
-
+console.log('nuray:',imageUrls)
 const picture=()=>{
 const str = imageUrls.toString().substring(0,2)
 
 
   return(
 
-
-  str==='//'?
+    str==='/a'? 
     <img  src={imageUrls} className="img-fluid rounded-start" width="400" alt="news_picture" />:
-    <img  src={`/assets/images/${imageUrls.name}`} className="img-fluid rounded-start" width="400" alt="news_picture" />
-  )
+    str==='//'? 
+     <img  src={imageUrls} className="img-fluid rounded-start" width="400" alt="news_picture" />:
+     <img  src={`/assets/images/${imageUrls.name}`} className="img-fluid rounded-start" width="400" alt="news_picture" />
+    )
+   
+ 
   
 
 }
@@ -83,6 +86,7 @@ const onSubmit = (data) => {
   else{
     imagePath=imageUrls
   }
+  console.log('word gestuurd:',imagePath);
   dispatch(newsUpdated({ id:Id,imagePath, display, title, discription, subtitle, content }))
  history.push(`/republiek`)
 }
