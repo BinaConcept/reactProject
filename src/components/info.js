@@ -33,7 +33,7 @@ function Info() {
         <div className="row">
           <div className="col-md-4">
             <h2>Weerstation</h2>
-            <p><p className="text-center" style={{borderRadius:10,border:1,width:150,padding:1,border:"2px solid black" }}>Geel {weatherdata} °C</p>
+            <p><p className="text-center" style={{borderRadius:10,border:1,width:150,padding:1 }}>Geel {weatherdata} °C</p>
        </p>
             
           </div>
