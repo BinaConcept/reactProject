@@ -37,15 +37,20 @@ export const EditNewsForm = ({ match }) => {
     <option key={province.id} value={province.city}>{province.city}</option>
   ));
 
+
+
 const picture=()=>{
 const str = imageUrls.toString().substring(0,2)
 
 
   return(
+
+
   str==='//'?
     <img  src={imageUrls} className="img-fluid rounded-start" width="400" alt="news_picture" />:
     <img  src={`/assets/images/${imageUrls.name}`} className="img-fluid rounded-start" width="400" alt="news_picture" />
   )
+  
 
 }
 

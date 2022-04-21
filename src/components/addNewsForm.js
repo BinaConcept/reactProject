@@ -155,7 +155,7 @@ export const AddNewsForm = () => {
           {...register('newsContent')}
           onChange={onContentChanged}
         />
-         {errors.newsTitle && <p>{errors.newsTitle.message}</p>}
+         {errors.newsContent && <p>{errors.newsContent.message}</p>}
         <br />
         <ToastContainer />
         <button type="submit" >Save news</button>

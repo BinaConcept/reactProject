@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import { Link } from "react-router-dom";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import { getNews, selectAllNews } from "../features/newsSlice";
 import Moment from 'moment';
 import { ToastContainer } from 'react-toastify'; 

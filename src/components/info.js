@@ -23,7 +23,13 @@ function Info() {
       <div className="jumbotron">
         <div className="container">
           <h1 className="display-3">Bulent Arslan</h1>
-          <p>Deze applicatie dient voor nieuws berichten te laden vanuit externe bron. We kunnen ook deze news indien nodig aanpassen of nieuwe erbij maken. We gebruiken <b>Redux</b> om data over te dragen tussen komponenten. De data word ook in locale database opgeslagen</p>
+          <p>Deze applicatie dient voor nieuws berichten te laden vanuit externe bron. 
+            We kunnen ook deze nieuws indien nodig aanpassen of nieuwe erbij maken. We gebruiken <b>Redux</b> om data over te dragen tussen komponenten. 
+            De data word ook in locale database opgeslagen.
+            Status acties worden getoond met toast.
+          
+          
+          </p>
           
         </div>
       </div>
