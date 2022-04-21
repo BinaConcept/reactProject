@@ -49,20 +49,7 @@ const str = imageUrls.toString().substring(0,2)
 
 }
 
-// const onSavePostClicked = () => {
-//  const str = imageUrls.toString().substring(0,2)
-//   var imagePath=""
 
-//   if (str!=="//" ) {
-//     imagePath="/assets/images/"+imageUrls.name
-     
-//   }
-//   else{
-//     imagePath=imageUrls.name
-//   }
-//   dispatch(newsUpdated({ id:Id,imagePath, display, title, description, subtitle, content }))
-//   console.log(imagePath)
-// }
 
 const SignupSchema = yup.object().shape({
   display: yup.string().required('Selecteer provincie'),

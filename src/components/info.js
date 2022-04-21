@@ -22,7 +22,7 @@ function Info() {
       <>
       <div className="jumbotron">
         <div className="container">
-          <h1 classNameName="display-3">Bulent Arslan</h1>
+          <h1 className="display-3">Bulent Arslan</h1>
           <p>Deze applicatie dient voor nieuws berichten te laden vanuit externe bron. We kunnen ook deze news indien nodig aanpassen of nieuwe erbij maken. We gebruiken <b>Redux</b> om data over te dragen tussen komponenten. De data word ook in locale database opgeslagen</p>
           
         </div>
@@ -32,7 +32,7 @@ function Info() {
         {/* <!-- Example row of columns --> */}
         <div className="row">
           <div className="col-md-4">
-            <h2>Weerstation test</h2>
+            <h2>Weerstation</h2>
             <p><p className="text-center" style={{borderRadius:10,border:1,width:150,padding:1,border:"2px solid black" }}>Geel {weatherdata} °C</p>
        </p>
             
